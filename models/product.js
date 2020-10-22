@@ -1,9 +1,9 @@
-// Creating Products model 
+// Creating Products model
 module.exports = function(sequelize, DataTypes) {
 const Product = sequelize.define("Product", {
     name: {
         type: DataTypes.STRING,
-        allowNull: false,
+      allowNull: false,
         unique: true
     },
     price: {
@@ -12,13 +12,13 @@ const Product = sequelize.define("Product", {
     },
     description: {
         type: DataTypes.STRING,
-        allowNull: false
-    }, 
-});
+      allowNull: false
+    }
+  });
 Product.associate = function(models) {
-    Product.hasMany(models.order, {
+    Product.belongsTo(models.User, {});
 
-    });
-}
-return Product;
-}
+  
+};
+  return Product;
+};
