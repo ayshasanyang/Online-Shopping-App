@@ -5,6 +5,7 @@ var exphbs = require("express-handlebars");
 var passport = require("./config/passport")
 var session = require("express-session");
 
+
 var db = require("./models");
 
 var app = express();
@@ -19,18 +20,25 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize()); 
 app.use(passport.session());
 
+
+
+
 // Handlebars
 app.engine(
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    defaultLayout: "main",
+    // layoutsDir: __dirname+'/views/'
   })
 );
 app.set("view engine", "handlebars");
 
+
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/product-api-routes")(app);
+require("./routes/post-api-routes")(app);
 
 var syncOptions = { force: false };
 
