@@ -1,24 +1,25 @@
-// Creating Products model
-module.exports = function(sequelize, DataTypes) {
-const Product = sequelize.define("Product", {
-    name: {
-        type: DataTypes.STRING,
-      allowNull: false,
-        unique: true
-    },
-    price: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    description: {
-        type: DataTypes.STRING,
-      allowNull: false
-    }
-  });
-Product.associate = function(models) {
-    Product.belongsTo(models.User, {});
 
-  
-};
+
+module.exports = function(sequelize, DataTypes) {
+  var Product = sequelize.define("Product", {
+    // Giving the Author model a name of type STRING
+    name: DataTypes.STRING,
+    price: DataTypes.STRING,
+    description: DataTypes.STRING
+  });
+
+  Product.associate = function(models) {
+    // Associating Author with Posts
+    // When an Author is deleted, also delete any associated Posts
+    Product.hasMany(models.Post, {
+      onDelete: "cascade"
+    });
+  };
+
   return Product;
 };
+
+
+
+
+

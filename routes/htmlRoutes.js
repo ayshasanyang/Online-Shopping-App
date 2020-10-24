@@ -1,7 +1,5 @@
 var db = require("../models");
 
-
-
 // Requiring path to so we can use relative routes to our HTML files
 var path = require("path");
 
@@ -10,12 +8,17 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
 
+
   app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/menu.html"));
+  })
+  app.get("/signup", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
+    // res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   app.get("/login", function(req, res) {
@@ -33,34 +36,36 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+
+
+  
+// Product adds 
+
+  // index route loads view.html
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  });
+
+  // cms route loads cms.html
+  app.get("/cms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  });
+
+  // blog route loads blog.html
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  });
+
+  // authors route loads author-manager.html
+  app.get("/products", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/product-manager.html"));
+  });
+
+
+
+
+
 };
 
 
 
-
-
-// module.exports = function(app) {
-//   // Load index page
-//   app.get("/", function(req, res) {
-//     db.User.findAll({}).then(function(dbUser) {
-//       res.render("index", {
-//         msg: "Welcome!",
-//         user: dbUser
-//       });
-//     });
-//   });
-
-//   // Load User page and pass in an User by id
-//   app.get("/user/:id", function(req, res) {
-//     db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
-//       res.render("user", {
-//         user: dbUser
-//       });
-//     });
-//   });
-
-//   // Render 404 page for any unmatched routes
-//   app.get("*", function(req, res) {
-//     res.render("404");
-//   });
-// };
