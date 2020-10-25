@@ -12,19 +12,43 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="row mt-4">
-      <div class="col-md-2 col-sm-2">
-        <a class="btn btn-light" href="/blog">View Products</a>
-      </div>
-			<div class="col-md-2 col-sm-2">
-        <a class="btn btn-light" href="/cms">Add New Product</a>
-	  </div>
-	  
-	  <div class="col-md-2 col-sm-2">
-        <a class="btn btn-light" href="/members">Dashboard</a>
-      </div>
-    </div>
+
+	<nav class="navbar fixed-top navbar-dark navbar-expand-md navbar-inverse text-white">
+        <a class="text-white navbar-brand" href="/">
+            <i class="fas fa-user-clock"></i> Impatient T-shirts
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto menu">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="/cms" class="nav-link">|Add New Products|</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="/blog" class="nav-link">|View Product|</a>
+				</li>
+				<li class="nav-item active">
+                    <a href="/members" class="nav-link">|Dashboard|</a>
+                </li>
+                
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <a href="/cart" class="text-white nav-link">
+                    <i class="text-warning fas fa-shopping-cart">
+                    </i> Shopping Cart <i style="color:yellow" id="cart_n"></i>
+                </a>
+                <a href="/signup" class="nav-link text-white">
+                    <i class="far fa-user"></i> Vendor Sign In
+                </a>
+            </form>
+        </div>
+    </nav>
+
 		<div class="row">
 			<div class="col-md-8 offset-md-2">
 				<div class="product-container">
@@ -39,22 +63,6 @@
 						<td><button type="submit" class="btn btn-success">Create Product</button>
 						</td>
 					</form>
-					<!-- <table class="table table-striped">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th># of Adds</th>
-								<th>View Products</th>
-								<th>Add Product</th>
-								<th>Delete Product</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr id="form-row">
-								
-							</tr>
-						</tbody>
-					</table> -->
 				</div>
 			</div>
 		</div>
