@@ -13,6 +13,10 @@ body{
     top: 0;
     height: 30px;
   }
+  .navbar-inverse {
+    background-color: #121d40;
+}
+
   
   .left_area h3{
     color: #fff;
@@ -29,7 +33,8 @@ body{
   .sidebar{
     z-index: 1;
     top: 0;
-    background: #2f323a;
+    /* background: #2f323a; */
+    background-color: #121d40;
     margin-top: 70px;
     padding-top: 30px;
     position: fixed;
