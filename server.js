@@ -4,6 +4,13 @@ var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 var passport = require("./config/passport")
 var session = require("express-session");
+var Handlebars = require('handlebars');
+var {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+
+
+
+const path = require('path')
+
 
 
 var db = require("./models");
@@ -28,9 +35,11 @@ app.engine(
   "handlebars",
   exphbs({
     defaultLayout: "main",
-    // layoutsDir: __dirname+'/views/'
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
+    
   })
 );
+app.set('views', path.join(__dirname, 'views'))
 app.set("view engine", "handlebars");
 
 

@@ -32,6 +32,7 @@ $(document).ready(function() {
   
     // A function for creating an author. Calls getAuthors upon completion
     function upsertProduct(productData) {
+      console.log(productData)
       $.post("/api/products", productData)
         .then(getProducts);
     }
