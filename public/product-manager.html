@@ -11,54 +11,34 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #8FA2B3;">
 
-	<nav class="navbar fixed-top navbar-dark navbar-expand-md navbar-inverse text-white">
-        <a class="text-white navbar-brand" href="/">
-            <i class="fas fa-user-clock"></i> Impatient T-shirts
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto menu">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="/cms" class="nav-link">|Add New Products|</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="/blog" class="nav-link">|View Product|</a>
-				</li>
-				<li class="nav-item active">
-                    <a href="/members" class="nav-link">|Dashboard|</a>
-                </li>
-                
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <a href="/cart" class="text-white nav-link">
-                    <i class="text-warning fas fa-shopping-cart">
-                    </i> Shopping Cart <i style="color:yellow" id="cart_n"></i>
-                </a>
-                <a href="/signup" class="nav-link text-white">
-                    <i class="far fa-user"></i> Vendor Sign In
-                </a>
-            </form>
-        </div>
-    </nav>
+
+    <div class="container" >
+        <div class="row mt-4">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/blog">View Products</a>
+      </div>
+            <div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/cms">Add New Product</a>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/members">Dashboard</a>
+      </div>
+    </div>
+
+	
 
 		<div class="row">
 			<div class="col-md-8 offset-md-2">
 				<div class="product-container">
 					<h1>Products</h1> 
 
-					<form id="product-form">
-						<td colspan="4">
-							<input placeholder="Enter a name" id="product-name" type="text" />
-							<input placeholder="Enter a price" id="price" type="text" />
-							<input placeholder="Enter a description" id="description" type="text" />
+					<form id="product-form" >
+						<td colspan="4" >
+							<input placeholder="Enter Designer Name" id="product-name" type="text" style="margin-bottom: 10px;" /><br>
+							<input placeholder="Enter a price" id="price" type="text" style="margin-bottom: 10px;" /><br>
+							<input placeholder="Enter a description" id="description" type="text" style="margin-bottom: 5px;" /><br>
 						</td>
 						<td><button type="submit" class="btn btn-success">Create Product</button>
 						</td>
