@@ -26,11 +26,11 @@ $(document).ready(function() {
   
     // This function grabs posts from the database and updates the view
     function getPosts(product) {
-      productId = product || "";
-      if (productId) {
-        productId = "/?product_id=" + productId;
-      }
-      $.get("/api/posts" + productId, function(data) {
+      // productId = product || "";
+      // if (productId) {
+      //   productId = "/?product_id=" + productId;
+      // }
+      $.get("/api/products" + productId, function(data) {
         console.log("Posts", data);
         posts = data;
         if (!posts || !posts.length) {
@@ -81,7 +81,7 @@ $(document).ready(function() {
       var newPostTitle = $("<h2>");
       var newPostDate = $("<small>");
       var newPostProduct = $("<h5>");
-      newPostProduct.text("Designed by: " + post.Product.name);
+      // newPostProduct.text("Design by: " + post.Product.name);
       newPostProduct.css({
         float: "right",
         color: "blue",
