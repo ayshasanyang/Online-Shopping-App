@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "yubvrzpodb0crd3k",
-        "password": "i0bryf86wure8o3v",
-        "database": "z7fxtx62oa5srfw3",
-        "host": "ijj1btjwrd3b7932.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "username": "root",
+        "password": "Jalicaserver_2020",
+        "database": "storedb",
+        "host": "localhost",
         "dialect": "mysql"
     },
     "test": {
