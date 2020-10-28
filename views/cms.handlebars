@@ -1,7 +1,7 @@
 <div class="container">
 		<div class="row top-30">
       <div class="col-md-2 col-sm-2">
-        <a class="btn btn-light" href="/blog">Your Product List</a>
+        <a class="btn btn-light" href="/blog">Go to Blog</a>
       </div>
       <div class="col-md-2 col-sm-2">
         <a class="btn btn-light" href="/products">Manage Products</a>
@@ -9,28 +9,29 @@
       <div class="col-md-2 col-sm-2">
         <a class="btn btn-light" href="/blog">View Products</a>
       </div>
+
+	<div class="product-container">
+  <h1>{{title}}</h1>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <form id="product-form{{product.name}}" method="post">
+          <div class="form-group">
+              <input type="text" id="product-name" class="form-control" value={{product.product-name}} placeholder="Product Name" />
+          </div>
+          <div class="form-group">
+              <input type="text" id="price" class="form-control" value={{product.price}} placeholder="Price" />
+          </div>
+           <div class="form-group">
+              <input type="text" id="description" class="form-control" value={{product.description}} placeholder="Description" />
+          </div>
+          <div class="form-group">
+              <button class="btn btn-info">Save Product</button>
+          </div>
+      </form>
     </div>
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<form id="cms">
-					<div class="form-group">
-						<label for="title">Product Name:</label>
-						<input placeholder="Add product Name" type="text" class="form-control" id="title">
-						<br />
-						<label for="body">Describe your Product:</label>
-						<textarea placeholder="comments" class="form-control" rows="10" id="body"></textarea>
-						<div class="form-group">
-							<label for="category">Design By:</label>
-							<select class="custom-select" id="product">
-  						</select>
-						</div>
-						<br />
-						<button type="submit" class="btn btn-success submit">Submit</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+  </div>
+</div>
 	<!-- Custom Script -->
     <!-- <script src="js/cms.js" type="text/javascript"></script> -->
     <script src="js/cms.js"></script>
