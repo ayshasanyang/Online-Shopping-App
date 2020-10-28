@@ -24,7 +24,7 @@ $(document).ready(function() {
       upsertProduct({
         name: nameInput
           .val()
-          .trim(),
+          .trim(), 
           price: priceInput.val().trim(),
           description: descriptionInput.val().trim()
       });
