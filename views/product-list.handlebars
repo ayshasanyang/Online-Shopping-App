@@ -9,17 +9,34 @@
     </div>
     <div class="row" style="margin-top: 20px;">
       <div class="col-md-12 blog-container">
+    <div class="container">
+      <h1>Product List</h1>
+      <h2>{{title}}</h2>
+      <br /><br />
+      <table class="table">
+        <tr>
+          <th>#ID</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
         {{#each products}}
-
-<div>{{name}} 
-     {{id}}
-     {{price}}
-     {{description}}</div>
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.product-name}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.description}}</td>
+          <td>
+            <a href="/product/edit-form/{{this.id}}" class="btn btn-info btn-sm">Edit</a>
+            <a href="/product/delete-product{{this.id}}" class="btn btn-danger btn-sm">Delete</a>
+          </td>
+        </tr>
         {{/each}}
-      </div>
+      </table>
     </div>
-  </div>
+    </div>
+    </div>
   <!-- Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  <!-- <script src="js/blog.js" type="text/javascript"></script> -->
   {{!-- <script src="js/blog.js"></script> --}}
