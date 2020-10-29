@@ -49,35 +49,4 @@ module.exports = function(app) {
     }
   });
 
-
-
-// image upload 
-
-
-
-
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
