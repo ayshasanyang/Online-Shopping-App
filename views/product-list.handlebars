@@ -9,7 +9,7 @@
     </div>
     <div class="row" style="margin-top: 20px;">
       <div class="col-md-12 blog-container">
-   
+
 <div class="container">
   <h1>Product List</h1>
   <h2>{{title}}</h2>
@@ -29,8 +29,8 @@
         <td>{{this.price}}</td>
         <td>{{this.description}}</td>
         <td>
-            <a href="/product/edit-form/{{this.id}}" class="btn btn-info btn-sm">Edit</a>
-            <a href="/product/delete-product{{this.id}}" class="btn btn-danger btn-sm">Delete</a>
+            <a href="/api/products/{{this.id}}" class="btn btn-info btn-sm">Edit</a>
+            <a data-id="{{this.id}}" class="delete-product btn btn-danger btn-sm">Delete</a>
         </td>
       </tr>
     {{/each}}
@@ -40,4 +40,6 @@
   </div>
   <!-- Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  {{!-- <script src="js/blog.js"></script> --}}
+  <script src="js/product-list.js"></script>
+
+  

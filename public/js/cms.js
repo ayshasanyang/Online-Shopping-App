@@ -15,14 +15,11 @@ $(document).ready(function() {
   
     // If we have this section in our url, we pull out the post id from the url
     // In '?post_id=1', postId is 1
-    if (url.indexOf("?post_id=") !== -1) {
-      postId = url.split("=")[1];
-      getPostData(postId, "post");
+    if (url.indexOf("?product_id=") !== -1) {
+      productId = url.split("=")[1];
+      getPostData(productId, "product");
     }
     // Otherwise if we have an product_id in our url, preset the product select box to be our Product
-    else if (url.indexOf("?product_id=") !== -1) {
-      productId = url.split("=")[1];
-    }
   
     // Getting the products, and their posts
     getProducts();
