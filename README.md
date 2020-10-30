@@ -5,8 +5,10 @@ This is an online shopping app
 - [Installation](#installation)
 - [Demo](#demo)
 - [License](#license)
-- [Technologies Used](#technologies-used)
+- [Contributors](#contributors)
 - [Challenges](#challenges)
+- [Technologies Used](#technologies-used)
+- [Questions](#questions)
 
 ## Description
 This project creates an application for online vendors to post their products to an Online Shopping Store. The vendors are able to create, update, edit and delete products from our vendor application storing product information in our Database. The information is easily retrievable to the vendor using a simple login and navigating to their own vendor account. The target user is an individual or business looking for an efficient way to sell their products.
@@ -27,6 +29,18 @@ or node server.js
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+
+## Contributors
+- Isatou Sanyang
+- Melanie Cisler
+- Nasrah Hassan
+- Ryan Tervo
+- Ryan Ferguson
+
+## Challenges
+Setting up the login/logout Passport functionality. Merging code amongst group members to github. Adding vendor images to the database. Changing from html to handlebars.
+
 ## Technologies Used
 
 - JavaScript
@@ -39,5 +53,5 @@ or node server.js
 - Travis CI
 - Heroku
 
-## Challenges
-Setting up the login/logout Passport functionality. Merging code amongst group members to github. Adding vendor images to the database. Changing from html to handlebars.
+## Questions
+For any other questions, please send me an email at: isasanyang1986@yahoo.co.uk
