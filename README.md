@@ -6,7 +6,7 @@ This is an online shopping app
 - [Demo](#demo)
 - [License](#license)
 - [Technologies Used](#technologies-used)
-- [Questions](#questions)
+- [Challenges](#challenges)
 
 ## Description
 This project creates an application for online vendors to post their products to an Online Shopping Store. The vendors are able to create, update, edit and delete products from our vendor application storing product information in our Database. The information is easily retrievable to the vendor using a simple login and navigating to their own vendor account. The target user is an individual or business looking for an efficient way to sell their products.
@@ -38,3 +38,6 @@ or node server.js
 - Passport
 - Travis CI
 - Heroku
+
+## Challenges
+Setting up the login/logout Passport functionality. Merging code amongst group members to github. Adding vendor images to the database. Changing from html to handlebars.
