@@ -1,7 +1,7 @@
 # Online-Shopping-App
 This is an online shopping app
 
-![OnlineApp](public/img/gif/women.png)
+![OnlineApp](public/img/gif/women.PNG)
 
 ## Table of contents
 - [Description](#description)
@@ -37,7 +37,7 @@ or node server.js
 ## Contributors
 - Isatou Sanyang
 - Melanie Cisler
-- Nasrah Hassan
+- Nasra Hassan
 - Ryan Tervo
 - Ryan Ferguson
 
