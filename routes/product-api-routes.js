@@ -46,4 +46,14 @@ module.exports = function(app) {
     });
   });
 
+  app.put("/api/products/:id", function(req, res) {
+    db.Product.update({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbProduct) {
+      res.json(dbProduct);
+    });
+  });
+
 };
