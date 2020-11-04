@@ -6,6 +6,7 @@ This is an online shopping app
 ## Table of contents
 - [Description](#description)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Demo](#demo)
 - [License](#license)
 - [Contributors](#contributors)
@@ -17,13 +18,33 @@ This is an online shopping app
 This project creates an application for online vendors to post their products to an Online Shopping Store. The vendors are able to create, update, edit and delete products from our vendor application storing product information in our Database. The information is easily retrievable to the vendor using a simple login and navigating to their own vendor account. The target user is an individual or business looking for an efficient way to sell their products.
 
 ## Installation
-Be sure to use npm install and mysql2. Change the appropriate user and password in config.json file. Load schema.sql into MySQL to get the storedb database.
 
+1. Clone the Repository
+
+Open your Bash/Terminal an type the following command:
+```
+git clone https://github.com/ayshasanyang/Online-Shopping-App
+```
+2. Open the project folder in Visual Studio Code and type the following command to install the dependencies.
+```
+npm install
+```
+
+3. Download MySQL workbench [here](https://dev.mysql.com/downloads/workbench/) to connect the database.
+
+4. Load schema.sql into MySQL to get the storedb database. MySQL workbench.
+
+5. Open config.json and change the password to yours.
+
+6. In you terminal run the following command to start the application in your browser:
 
 ```
 To Run: npm start
 or node server.js
 ```
+
+
+
 ## Demo
 [Deployed App in Heroku](https://floating-lowlands-34709.herokuapp.com/)
 

@@ -1,7 +1,7 @@
 {
     "development": {
         "username": "root",
-        "password": "Jalicaserver_2020",
+        "password": "",
         "database": "storedb",
         "host": "localhost",
         "dialect": "mysql"
