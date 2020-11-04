@@ -6,7 +6,6 @@ This is an online shopping app
 ## Table of contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Demo](#demo)
 - [License](#license)
 - [Contributors](#contributors)
@@ -25,7 +24,7 @@ Open your Bash/Terminal an type the following command:
 ```
 git clone https://github.com/ayshasanyang/Online-Shopping-App
 ```
-2. Open the project folder in Visual Studio Code and type the following command to install the dependencies.
+2. Open the project folder in Visual Studio Code can be found [here](https://code.visualstudio.com/download) and type the following command to install the dependencies.
 ```
 npm install
 ```
