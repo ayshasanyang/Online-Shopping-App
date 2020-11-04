@@ -9,7 +9,6 @@ This is an online shopping app
 - [Demo](#demo)
 - [License](#license)
 - [Contributors](#contributors)
-- [Challenges](#challenges)
 - [Technologies Used](#technologies-used)
 - [Questions](#questions)
 
